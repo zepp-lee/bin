@@ -29,6 +29,7 @@ class TripAdvisorSpider(scrapy.Spider):
                 yield TripAdvisorReviewItem(
                     title=review.css('div[class*=reviewTitle] a span span::text').get().strip(),
                     text=' '.join(review.css('q[class*=reviewText] span::text').getall()).strip(),
+                    rating=int(review.css('span.ui_bubble_rating::attr(class)').re("bubble_(\d+)")[0]) / 10,
                     country=geocoder.osm(hometown).country_code,    # TODO: Batch geocoding requests
                     source_url=response.url,
                 )

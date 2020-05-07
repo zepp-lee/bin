@@ -11,5 +11,6 @@ import scrapy
 class TripAdvisorReviewItem(scrapy.Item):
     title = scrapy.Field()
     text = scrapy.Field()
+    rating = scrapy.Field()
     country = scrapy.Field()
     source_url = scrapy.Field()
