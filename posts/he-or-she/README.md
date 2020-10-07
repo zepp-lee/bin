@@ -1,6 +1,6 @@
 # He or She?
 
-This directory accompanies a blog post available at: https://posts.seble.info/he-or-she-or-the-basics-of-binary-classifier-evaluation/
+This directory accompanies a blog post available at: https://www.seble.info/posts/he-or-she-or-the-basics-of-binary-classifier-evaluation/
 
 ## Getting started
 
